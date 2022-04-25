@@ -20,7 +20,7 @@
 
     <div class="card-body">
 
-        <form class="form-horizontal" th:object="${conta}" style="margin: 20px"  th:action="@{save}"  method="POST"><!-- th:object ligando o formulario ao controlller chama o obejro-->
+        <form class="form-horizontal" th:object="${conta}" style="margin: 20px"  th:action="@{/contas/save}"  method="POST"><!-- th:object ligando o formulario ao controlller chama o obejro-->
             <div class="form-group">
                 <fieldset>
 
@@ -73,7 +73,7 @@
                 <button  type="submit" class="btn btn-sm btn-danger">Salvar</button>
 
 
-                <a style="margin-left: 10px" class="btn btn-sm btn-success" th:href="@{voltar}">Voltar</a>
+                <a style="margin-left: 10px" class="btn btn-sm btn-success" th:href="@{/contas/listar}">Voltar</a>
 
             </div>
 
