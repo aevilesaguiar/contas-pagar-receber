@@ -18,6 +18,7 @@ public class ContasService {
 
     public List<Contas> listAll(){
         return  contasRepository.findAll();
+
     }
 
     public void save(Contas contas){
